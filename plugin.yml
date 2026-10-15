@@ -1,0 +1,16 @@
+name: JobsPlugin
+version: 1.0-SNAPSHOT
+main: com.tuempresa.jobs.JobsPlugin
+api-version: '1.20'
+commands:
+  jobs:
+    description: Comando principal del sistema de trabajos.
+    usage: /jobs [set|remove] [jugador] [trabajo]
+    permission: jobs.use
+permissions:
+  jobs.use:
+    description: Permite abrir el menú de trabajos.
+    default: true
+  jobs.admin:
+    description: Permite asignar o quitar trabajos a jugadores.
+    default: op
